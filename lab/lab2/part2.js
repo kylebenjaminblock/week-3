@@ -18,3 +18,35 @@ _.each(myArray, function(value, key, list) {
   console.log(value, key, list);
 });
 ===================== */
+
+function filterOutLessThan10 (array) {
+   array2 =[];
+  _.each(array, function(num){
+     if (num > 10){
+       array2.push(num);
+     }
+   });
+   return (array2);
+ }
+  filterOutLessThan10([2,41]);
+
+  
+
+_.each(_.range(1, 101), function(num) {
+    if (num % 3 == 0 && num % 5 == 0) {
+        console.log("FizzBuzz")
+    } else if (num % 5 == 0) {
+        console.log("Buzz")
+    } else if (num % 3 == 0) {
+        console.log("Fizz")
+    } else {
+        console.log(num)
+    }
+ });
+
+
+var myArray = [1, 10, 100, 1000];
+    _.each(myArray, function(value, key, list) {
+
+    console.log(value, key, list);
+ });
